@@ -10,7 +10,6 @@ class VRViewer extends React.Component {
         loaded:false
     };
 
-    
     // Load Assets
     this.assets = this.props.data.map((value,index) => {
         return(
@@ -34,9 +33,9 @@ class VRViewer extends React.Component {
       {
         var splitrot=item.position.split(" ");
         var x= parseFloat(splitrot[0]*120);
-        var y= parseFloat(splitrot[1]*80);
+        // var y= parseFloat(splitrot[1]*80);
         var z= parseFloat(splitrot[2]*120);
-        console.log(x+" "+"-8"+z)
+        // console.log(x+" "+"-8"+z)
         
         return(
           <a-image 
@@ -44,7 +43,7 @@ class VRViewer extends React.Component {
             src="#hotspot"
             position={x+" "+"-8 "+z}
             scale="10 10"
-            look-at='[camera]'>   
+            look-at='[camera]'>
           </a-image>
         ) 
         
@@ -62,12 +61,6 @@ class VRViewer extends React.Component {
             
             <a-sky src= {'#'+this.props.image.name} />
             {this.links}
-{/*             
-            <a-image 
-              src="#hotspot"
-              position="0.8826060510865503 -0.08739164477592737 -0.48291200668298667"
-              look-at='[camera]'>   
-            </a-image> */}
         </a-scene>
       </Segment>
     );
