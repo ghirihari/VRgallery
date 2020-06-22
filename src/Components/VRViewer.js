@@ -53,7 +53,7 @@ class VRViewer extends React.Component {
 
     return (
       <Segment>
-        <a-scene>
+        <a-scene loading-screen="dotsColor: white; backgroundColor: black">
             <a-assets>
               {this.assets}
               {this.hotspotIcon}
