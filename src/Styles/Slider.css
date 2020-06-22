@@ -1,0 +1,46 @@
+.thumbnail{
+    line-height: 1;
+    font-size: medium;
+    letter-spacing: 1px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    color: white;
+    border-radius: 5%;
+}
+
+.thumbnailImg{
+  border-radius: 5%;
+}
+
+.thumbnailImg:hover{
+  filter:brightness(105%);
+  filter:saturate(1.3);
+
+}
+
+.thumbnail:hover{
+  font-weight: 600;
+}
+
+
+.centered {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ui.inverted {
+  border: 0 solid transparent;
+  background: transparent !important;  
+  box-shadow: none;
+}
+
+.ui.inverted.menu a.item:hover{
+  background: #ffffff00 !important; 
+}
+
+.item {
+  border-color: transparent !important;
+}
