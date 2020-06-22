@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/VRgallery/static/css/main.e95eb248.chunk.css",
+    "main.js": "/VRgallery/static/js/main.630ccd06.chunk.js",
+    "main.js.map": "/VRgallery/static/js/main.630ccd06.chunk.js.map",
+    "runtime-main.js": "/VRgallery/static/js/runtime-main.8ab5e45a.js",
+    "runtime-main.js.map": "/VRgallery/static/js/runtime-main.8ab5e45a.js.map",
+    "static/css/2.6ff061d4.chunk.css": "/VRgallery/static/css/2.6ff061d4.chunk.css",
+    "static/js/2.5d1dc6cc.chunk.js": "/VRgallery/static/js/2.5d1dc6cc.chunk.js",
+    "static/js/2.5d1dc6cc.chunk.js.map": "/VRgallery/static/js/2.5d1dc6cc.chunk.js.map",
+    "index.html": "/VRgallery/index.html",
+    "precache-manifest.263d03fa7e79f4c4a74a90a4e0ea556e.js": "/VRgallery/precache-manifest.263d03fa7e79f4c4a74a90a4e0ea556e.js",
+    "service-worker.js": "/VRgallery/service-worker.js",
+    "static/css/2.6ff061d4.chunk.css.map": "/VRgallery/static/css/2.6ff061d4.chunk.css.map",
+    "static/css/main.e95eb248.chunk.css.map": "/VRgallery/static/css/main.e95eb248.chunk.css.map",
+    "static/js/2.5d1dc6cc.chunk.js.LICENSE.txt": "/VRgallery/static/js/2.5d1dc6cc.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/VRgallery/static/media/outline-icons.ef60a4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ab5e45a.js",
+    "static/css/2.6ff061d4.chunk.css",
+    "static/js/2.5d1dc6cc.chunk.js",
+    "static/css/main.e95eb248.chunk.css",
+    "static/js/main.630ccd06.chunk.js"
+  ]
+}
