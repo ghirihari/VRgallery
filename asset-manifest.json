@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/VRgallery/static/css/main.e95eb248.chunk.css",
-    "main.js": "/VRgallery/static/js/main.4b5edaa5.chunk.js",
-    "main.js.map": "/VRgallery/static/js/main.4b5edaa5.chunk.js.map",
+    "main.js": "/VRgallery/static/js/main.42015fab.chunk.js",
+    "main.js.map": "/VRgallery/static/js/main.42015fab.chunk.js.map",
     "runtime-main.js": "/VRgallery/static/js/runtime-main.8ab5e45a.js",
     "runtime-main.js.map": "/VRgallery/static/js/runtime-main.8ab5e45a.js.map",
     "static/css/2.6ff061d4.chunk.css": "/VRgallery/static/css/2.6ff061d4.chunk.css",
     "static/js/2.7cb1c444.chunk.js": "/VRgallery/static/js/2.7cb1c444.chunk.js",
     "static/js/2.7cb1c444.chunk.js.map": "/VRgallery/static/js/2.7cb1c444.chunk.js.map",
     "index.html": "/VRgallery/index.html",
-    "precache-manifest.9174efc46f089e2c96707bf1267c43d1.js": "/VRgallery/precache-manifest.9174efc46f089e2c96707bf1267c43d1.js",
+    "precache-manifest.d0a5bdde59d9b8099d6e5c8429e07b5e.js": "/VRgallery/precache-manifest.d0a5bdde59d9b8099d6e5c8429e07b5e.js",
     "service-worker.js": "/VRgallery/service-worker.js",
     "static/css/2.6ff061d4.chunk.css.map": "/VRgallery/static/css/2.6ff061d4.chunk.css.map",
     "static/css/main.e95eb248.chunk.css.map": "/VRgallery/static/css/main.e95eb248.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.6ff061d4.chunk.css",
     "static/js/2.7cb1c444.chunk.js",
     "static/css/main.e95eb248.chunk.css",
-    "static/js/main.4b5edaa5.chunk.js"
+    "static/js/main.42015fab.chunk.js"
   ]
 }
