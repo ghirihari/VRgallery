@@ -29,6 +29,7 @@ class Home extends React.Component {
                     },
                     "links" : {
                         "theatere" : {
+                        "name" : "Theatre",
                         "dest-image" : "https://firebasestorage.googleapis.com/v0/b/realvr-eb62c.appspot.com/o/iHwPWJvWDQYW6ilIAfNfgupytcb2%2FInnov8%2F1579863181062-20200124_161208_885.jpg?alt=media&token=dc168d99-2e45-4758-b0fb-c41b356eb675",
                         "dest-thumb" : "https://firebasestorage.googleapis.com/v0/b/realvr-eb62c.appspot.com/o/iHwPWJvWDQYW6ilIAfNfgupytcb2%2FInnov8%2Fthumbs%2F1579863191216-20200124_161208_885.jpg?alt=media&token=bbffb628-3d4e-4369-8571-a0af07abb52b",
                         "position" : "0.8826060510846503 -0.08739164477592737 -0.48291200668298667"
@@ -61,8 +62,9 @@ class Home extends React.Component {
     }
 
     changeImage(str){
+        // console.log(str);
         this.setState({current_image:str})
-        this.sideBarToggle();
+        // this.sideBarToggle();
     }
 
     
@@ -80,7 +82,11 @@ class Home extends React.Component {
 
                 <Sidebar.Pusher onClick={this.hideSideBar}>
                     {/* 360 IMAGE COMPONENT */}
-                    <VRViewer data={this.images} image={this.state.current_image}  />
+                    <VRViewer 
+                        data={this.images} 
+                        image={this.state.current_image}
+                        changeImage={this.changeImage.bind(this)}
+                    />
                 </Sidebar.Pusher>
             </Sidebar.Pushable>
 
