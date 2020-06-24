@@ -41,7 +41,7 @@ class VRViewer extends React.Component {
         <a-image
           id={item.name} key={item.name} src="#hotspot"
           position={x+" -8 "+z} scale="10 10"
-          look-at='#cam1' onClick={(e) => this.change(e.target.id)}
+          look-at='[camera]' onClick={(e) => this.change(e.target.id)}
         >
         </a-image>
       ) 
@@ -52,16 +52,16 @@ class VRViewer extends React.Component {
   render()
     { 
     this.loadLinks();
-    
     return (
       <Segment>
-        <a-scene loading-screen="dotsColor: white; backgroundColor: black">
+        <a-scene >
+            {/* Loads Assets */}
             <AssestsLoader data = {this.props.data}/>
-            <a-sky src= {'#'+this.props.image.name} />
+            <a-sky src= {'#'+this.props.image.name} /> 
+            {/* Loads Hotspots */}
             {this.links}
-            <a-camera id="cam1" mouse-cursor>
-              <a-cursor></a-cursor>
-            </a-camera>
+            <a-entity id="cam1" camera cursor="rayOrigin: mouse"></a-entity>
+
         </a-scene>
       </Segment>
     );
@@ -69,3 +69,13 @@ class VRViewer extends React.Component {
 }
   
   export default VRViewer;
+
+
+
+//junk
+
+{/* <a-camera id="cam1" look-controls="gyroEnabled: false;" >
+  <a-cursor></a-cursor>
+</a-camera> */}
+{/* <a-entity id="cam1" camera cursor="rayOrigin: mouse"></a-entity> */}
+         
