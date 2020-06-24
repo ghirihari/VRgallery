@@ -4,7 +4,7 @@ import { Menu, Segment, Sidebar } from 'semantic-ui-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-import VRViewer from './VRViewer'
+import VRViewer from './VRComponents/VRViewer'
 import Slider from './Slider'
 import '../Styles/Home.css';
 
