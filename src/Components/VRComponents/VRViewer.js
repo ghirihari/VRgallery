@@ -27,6 +27,7 @@ class VRViewer extends React.Component {
       {this.props.changeImage(value)}
     });
   }
+
   
   loadLinks()
   {
@@ -41,8 +42,9 @@ class VRViewer extends React.Component {
         <a-image
           id={item.name} key={item.name} src="#hotspot"
           position={x+" -8 "+z} scale="10 10"
-          look-at='[camera]' onClick={(e) => this.change(e.target.id)}
-        >
+          look-at='[camera]' 
+          onClick={(e) => this.change(e.target.id)}
+         >
         </a-image>
       ) 
     })
@@ -72,7 +74,7 @@ class VRViewer extends React.Component {
 
 
 
-//junk
+//cursor
 
 {/* <a-camera id="cam1" look-controls="gyroEnabled: false;" >
   <a-cursor></a-cursor>
