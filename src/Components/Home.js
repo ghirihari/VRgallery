@@ -110,10 +110,6 @@ class Home extends React.Component {
                 {this.state.current_image.name}
             </div>
 
-            <div className="bottom-right bottom-icons" onClick={this.VrModeToggle}>
-                VR
-            </div>
-
         </div>
     )
     }
