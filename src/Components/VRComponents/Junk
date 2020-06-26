@@ -1,0 +1,29 @@
+Perfect mouse Click
+
+ <a-scene >
+    <AssestsLoader data = {this.props.data}/>
+    <a-sky src= {'#'+this.props.image.name} /> 
+    {this.links}
+    <a-entity id="cam1" camera cursor="rayOrigin: mouse; fuse: false;"></a-entity>
+</a-scene>
+
+Perfect VR
+
+ <a-scene >
+            <AssestsLoader data = {this.props.data}/>
+            <a-sky src= {'#'+this.props.image.name} /> 
+            {this.links}
+        
+          
+            <a-camera id="cam1" >
+              <a-cursor  raycaster="interval: 3000;"></a-cursor>
+            </a-camera>
+</a-scene>
+
+Mouse
+    <a-entity id="cam1" camera cursor="rayOrigin: mouse; fuse: false;"></a-entity> 
+
+Cursor
+<a-camera id="cam1" >
+    <a-cursor></a-cursor>
+</a-camera>            

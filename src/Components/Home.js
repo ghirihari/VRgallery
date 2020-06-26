@@ -14,6 +14,7 @@ class Home extends React.Component {
         super(props);
         this.state = {
             visible: false,
+            VrMode: false,
             current_image: {
                     "info" : {
                         "About Innov8" : {
@@ -46,12 +47,18 @@ class Home extends React.Component {
         this.sideBarToggle = this.sideBarToggle.bind(this);
         this.hideSideBar = this.hideSideBar.bind(this);
         this.changeImage = this.changeImage.bind(this);
+        // this.VrModeToggle = this.VrModeToggle.bind(this);
+
     }
 
 
     sideBarToggle() {
         this.setState(state => ({visible: !state.visible}));
         // console.log('Toggled')
+    }
+
+    VrModeToggle = () => {
+        this.setState(state => ({VrMode: !state.VrMode}))
     }
 
     hideSideBar() {
@@ -86,6 +93,7 @@ class Home extends React.Component {
                         data={this.images} 
                         image={this.state.current_image}
                         changeImage={this.changeImage.bind(this)}
+                        VrMode = {this.state.VrMode}
                     />
                 </Sidebar.Pusher>
             </Sidebar.Pushable>
@@ -101,6 +109,11 @@ class Home extends React.Component {
             <div className="top-left label">
                 {this.state.current_image.name}
             </div>
+
+            <div className="bottom-right bottom-icons" onClick={this.VrModeToggle}>
+                VR
+            </div>
+
         </div>
     )
     }
