@@ -109,7 +109,7 @@ class Home extends React.Component {
         <div style={{height: '100vh'}} >
             
             <Sidebar.Pushable as={Segment}>
-                <Sidebar class="sideba" as={Menu} animation='overlay'icon='labeled' inverted direction='right' vertical visible={this.state.visible}> 
+                <Sidebar as={Menu} animation='overlay'icon='labeled' inverted direction='right' vertical visible={this.state.visible}> 
                     {/* SLIDER COMPONENT */}
                     <Slider changeImage={this.changeImage.bind(this)} images = {this.images}/>
                 </Sidebar>
