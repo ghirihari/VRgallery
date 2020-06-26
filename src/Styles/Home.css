@@ -33,14 +33,7 @@
   }
 
   .info{
-    animation-name: outro;
-    animation-duration: 1s;  
-  }
-
-  @keyframes outro {
-    0%   {opacity: 100%;}
-    99% {opacity: 0%;}
-    100% {display: none;}
+    display: none;
   }
 
   .infoVisible{
@@ -55,26 +48,8 @@
       transform: translate(-50%, -50%);
       background: white;
       padding: 15px;
-      animation-name: intro;
-      animation-duration: 1s;  
   }
-
-
-  @keyframes intro {
-    0%   {opacity: 0%;}
-    100% {opacity: 100%;}
-  }
-  
-  @-webkit-keyframes intro {
-    0%   {opacity: 0%;}
-    100% {opacity: 100%;}
-  }
-
-  @-moz-keyframes  intro {
-    0%   {opacity: 0%;}
-    100% {opacity: 100%;}
-  }
-  
+ 
   .ui.segment{
     border: 0px !important;
     border-radius: 0px !important;
