@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "643233b49ae196d6affc93e3204fc332",
+    "revision": "2bc09f9d61f1a8f5b7e7d5185c346f86",
     "url": "/VRgallery/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VRgallery/static/css/2.6ff061d4.chunk.css"
   },
   {
-    "revision": "f525f270d3e34d5edc2d",
-    "url": "/VRgallery/static/css/main.fbe87887.chunk.css"
+    "revision": "86342d9b9e8211f772d4",
+    "url": "/VRgallery/static/css/main.2ee53690.chunk.css"
   },
   {
     "revision": "314d59286a589dfb7ea3",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VRgallery/static/js/2.0081fbe0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f525f270d3e34d5edc2d",
+    "revision": "86342d9b9e8211f772d4",
     "url": "/VRgallery/static/js/main.3b75ffa6.chunk.js"
   },
   {
