@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Menu, Segment, Sidebar } from 'semantic-ui-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars,faExpandAlt,faInfo } from '@fortawesome/free-solid-svg-icons'
 
 import VRViewer from './VRComponents/VRViewer'
 import Slider from './Slider'
@@ -15,6 +15,7 @@ class Home extends React.Component {
         this.state = {
             visible: false,
             VrMode: false,
+            info:false,
             current_image: {
                     "info" : {
                         "About Innov8" : {
@@ -47,6 +48,7 @@ class Home extends React.Component {
         this.sideBarToggle = this.sideBarToggle.bind(this);
         this.hideSideBar = this.hideSideBar.bind(this);
         this.changeImage = this.changeImage.bind(this);
+        this.info = this.info.bind(this);
         // this.VrModeToggle = this.VrModeToggle.bind(this);
 
     }
@@ -57,9 +59,34 @@ class Home extends React.Component {
         // console.log('Toggled')
     }
 
-    VrModeToggle = () => {
-        this.setState(state => ({VrMode: !state.VrMode}))
+    FullscreenToggle = () => {
+        var doc = window.document;
+        var docEl = doc.documentElement;
+      
+        var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+        var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+      
+        if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+          requestFullScreen.call(docEl);
+        }
+        else {
+          cancelFullScreen.call(doc);
+        }
     }
+
+    info = () => {
+        this.setState(
+            state => ({info: !state.info})
+        ,() => {
+            if(this.state.info)
+            {
+                document.getElementById('info').className ='infoVisible';
+            }else{
+                document.getElementById('info').className ='info';
+            }
+        });
+        
+        }
 
     hideSideBar() {
         if(this.state.visible){
@@ -82,7 +109,7 @@ class Home extends React.Component {
         <div style={{height: '100vh'}} >
             
             <Sidebar.Pushable as={Segment}>
-                <Sidebar as={Menu} animation='overlay'icon='labeled' inverted direction='right' vertical visible={this.state.visible}> 
+                <Sidebar class="sideba" as={Menu} animation='overlay'icon='labeled' inverted direction='right' vertical visible={this.state.visible}> 
                     {/* SLIDER COMPONENT */}
                     <Slider changeImage={this.changeImage.bind(this)} images = {this.images}/>
                 </Sidebar>
@@ -93,7 +120,6 @@ class Home extends React.Component {
                         data={this.images} 
                         image={this.state.current_image}
                         changeImage={this.changeImage.bind(this)}
-                        VrMode = {this.state.VrMode}
                     />
                 </Sidebar.Pusher>
             </Sidebar.Pushable>
@@ -109,6 +135,23 @@ class Home extends React.Component {
             <div className="top-left label">
                 {this.state.current_image.name}
             </div>
+
+            <div id="info" className="info">
+                <img className="image" alt="info" src="https://cdn.glitch.com/a04a26d3-92af-4a88-9d49-8fcc2c5344a5%2Fclick.png?v=1570097488868"/>
+                <p>Click to Jump</p>
+            </div>
+
+
+            {!this.state.visible &&
+            <div className="bottom-right" >
+                <div className="bottom-icons" onClick={this.info}>
+                    <FontAwesomeIcon icon={faInfo} color="white" size="2x"/>
+                </div>
+                <div className="bottom-icons" onClick={this.FullscreenToggle}>
+                    <FontAwesomeIcon icon={faExpandAlt} color="white" size="2x"/>
+                </div>
+            </div>
+            }
 
         </div>
     )

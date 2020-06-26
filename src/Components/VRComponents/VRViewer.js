@@ -20,31 +20,6 @@ class VRViewer extends React.Component {
     this.loadLinks = this.loadLinks.bind(this);    
    }
 
-  // componentDidMount(){
-  //   var _ = this;
-  //   const AFRAME = window.AFRAME;
-
-  //   AFRAME.registerComponent('raycaster-listen', {
-  //     init: function () {    
-  //       this.el.addEventListener('raycaster-intersected', evt => {
-  //         this.raycaster = evt.detail.el;
-  //         console.log('Intersected');
-  //       });
-  //       this.el.addEventListener('raycaster-intersected-cleared', evt => {
-  //         this.raycaster = null;
-  //         // console.log('Cleared')
-          
-  //       });
-  //     },  
-  //     tick: function () {
-  //       if (!this.raycaster) { return; }  // Not intersecting.
-  //       let intersection = this.raycaster.components.raycaster.getIntersection(this.el);
-  //       if (!intersection) { return; }
-  //       _.change(this.el.id);
-  //     }
-  //   });
-  // }
-
   change(str){
     this.props.data.map((value,index) => {
       if(value.name === str)
@@ -84,9 +59,12 @@ class VRViewer extends React.Component {
         <a-scene >
             {/* Loads Assets */}
             <AssestsLoader data = {this.props.data}/>
+            
             <a-sky src= {'#'+this.props.image.name} /> 
+            
             {/* Loads Hotspots */}
             {this.links}
+            
             {/* Loads Mouse */}
             <a-entity id="cam1" camera cursor="rayOrigin: mouse; fuse: false;"></a-entity>
            
