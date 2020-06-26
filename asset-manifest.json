@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/VRgallery/static/css/main.2ee53690.chunk.css",
+    "main.css": "/VRgallery/static/css/main.b6af92a9.chunk.css",
     "main.js": "/VRgallery/static/js/main.3b75ffa6.chunk.js",
     "main.js.map": "/VRgallery/static/js/main.3b75ffa6.chunk.js.map",
     "runtime-main.js": "/VRgallery/static/js/runtime-main.8ab5e45a.js",
@@ -9,10 +9,10 @@
     "static/js/2.0081fbe0.chunk.js": "/VRgallery/static/js/2.0081fbe0.chunk.js",
     "static/js/2.0081fbe0.chunk.js.map": "/VRgallery/static/js/2.0081fbe0.chunk.js.map",
     "index.html": "/VRgallery/index.html",
-    "precache-manifest.7455f61a93f4bca888d160cb4be519f2.js": "/VRgallery/precache-manifest.7455f61a93f4bca888d160cb4be519f2.js",
+    "precache-manifest.614629adc45cc581bd518f1617c9a08b.js": "/VRgallery/precache-manifest.614629adc45cc581bd518f1617c9a08b.js",
     "service-worker.js": "/VRgallery/service-worker.js",
     "static/css/2.6ff061d4.chunk.css.map": "/VRgallery/static/css/2.6ff061d4.chunk.css.map",
-    "static/css/main.2ee53690.chunk.css.map": "/VRgallery/static/css/main.2ee53690.chunk.css.map",
+    "static/css/main.b6af92a9.chunk.css.map": "/VRgallery/static/css/main.b6af92a9.chunk.css.map",
     "static/js/2.0081fbe0.chunk.js.LICENSE.txt": "/VRgallery/static/js/2.0081fbe0.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/VRgallery/static/media/outline-icons.ef60a4f6.woff"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.8ab5e45a.js",
     "static/css/2.6ff061d4.chunk.css",
     "static/js/2.0081fbe0.chunk.js",
-    "static/css/main.2ee53690.chunk.css",
+    "static/css/main.b6af92a9.chunk.css",
     "static/js/main.3b75ffa6.chunk.js"
   ]
 }
