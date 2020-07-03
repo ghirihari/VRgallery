@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars,faExpandAlt,faInfo } from '@fortawesome/free-solid-svg-icons'
 
 import VRViewer from './VRComponents/VRViewer'
+import SecondaryView from './VRComponents/SecondaryView'; 
 import Slider from './Slider'
 import '../Styles/Home.css';
 
@@ -102,9 +103,9 @@ class Home extends React.Component {
     }
 
     
-    
     render()
     {
+
     return (
         <div style={{height: '100vh'}} >
             

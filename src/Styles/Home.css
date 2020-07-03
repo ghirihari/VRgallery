@@ -3,6 +3,14 @@
     top: 15px;
     right: 15px;
   }
+
+  .aframe-sec {
+    position: absolute;
+    bottom: 180px;
+    left: 15px;
+    height: 100px;
+    width:250px;
+  }
   
   .top-left {
     position: absolute;

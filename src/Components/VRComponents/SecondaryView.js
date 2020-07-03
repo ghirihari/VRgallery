@@ -7,7 +7,7 @@ import './AframeComp';
 import AssestsLoader from "./AssetsLoader";
 
 
-class VRViewer extends React.Component {
+class SecondryView extends React.Component {
 
     constructor(props)
     {
@@ -25,21 +25,21 @@ class VRViewer extends React.Component {
    componentDidMount(){
     const AFRAME = window.AFRAME
 
-    AFRAME.registerComponent('rotation-reader', {
-      tick: function () {
-        var x,y;
-        x = this.el.object3D.rotation.x;
-        y = this.el.object3D.rotation.y
-        // console.log(this.el.getAttribute('rotation').x);
-        // console.log(this.el.getAttribute('rotation').y);
-       }
-    });
+    // AFRAME.registerComponent('rotation-reader', {
+    //   tick: function () {
+    //     var x,y;
+    //     x = this.el.object3D.rotation.x;
+    //     y = this.el.object3D.rotation.y
+    //     console.log(this.el.getAttribute('rotation').x);
+    //     console.log(this.el.getAttribute('rotation').y);
+    //    }
+    // });
 
-    AFRAME.registerComponent('rotation-setter', {
-      tick: function () {
-       this.el.setAttribute('rotation', {x: 0, y: 90, z: 30});
-       }
-    });
+    // AFRAME.registerComponent('rotation-setter', {
+    //   tick: function () {
+    //    this.el.setAttribute('rotation', {x: 0, y: 90, z: 30});
+    //    }
+    // });
 
    }
 
@@ -82,23 +82,15 @@ class VRViewer extends React.Component {
     this.loadLinks();
     return (
       <Segment>
-        <a-scene >
-            {/* Loads Assets */}
+          <a-scene embedded style={{height: 200 ,width: 400}}>
             <AssestsLoader data = {this.props.data}/>
-            
             <a-sky src= {'#'+this.props.image.name} /> 
-            
-            {/* Loads Hotspots */}
             {this.links}
-            
-            {/* Loads Mouse */}
-            <a-camera id="cam1" rotation="0 0 0" rotation-reader cursor="rayOrigin: mouse; fuse: false;"></a-camera>
-           
-
-        </a-scene>
+            <a-camera id="cam1" rotation-reader></a-camera>  
+          </a-scene>
       </Segment>
     );
     }
 }
 
-export default VRViewer;
+export default SecondryView;
