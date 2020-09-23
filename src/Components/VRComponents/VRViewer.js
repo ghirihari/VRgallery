@@ -2,8 +2,6 @@ import React from 'react';
 import { Segment } from 'semantic-ui-react';
 import 'aframe';
 import 'aframe-look-at-component';
-import './AframeComp';
-
 import AssestsLoader from "./AssetsLoader";
 
 
@@ -22,34 +20,12 @@ class VRViewer extends React.Component {
 
    }
 
-   componentDidMount(){
-    const AFRAME = window.AFRAME
-
-    AFRAME.registerComponent('rotation-reader', {
-      tick: function () {
-        var x,y;
-        x = this.el.object3D.rotation.x;
-        y = this.el.object3D.rotation.y
-        // console.log(this.el.getAttribute('rotation').x);
-        // console.log(this.el.getAttribute('rotation').y);
-       }
-    });
-
-    AFRAME.registerComponent('rotation-setter', {
-      tick: function () {
-       this.el.setAttribute('rotation', {x: 0, y: 90, z: 30});
-       }
-    });
-
-   }
-
-
-
-
   change(str){
     this.props.data.map((value,index) => {
       if(value.name === str)
-      {this.props.changeImage(value)}
+      {
+        this.props.changeImage(value)
+      }
     });
   }
 
@@ -74,7 +50,6 @@ class VRViewer extends React.Component {
         </a-image>
       ) 
     })
-    // console.log(this.links);
   }
   
   render()
@@ -83,18 +58,10 @@ class VRViewer extends React.Component {
     return (
       <Segment>
         <a-scene >
-            {/* Loads Assets */}
             <AssestsLoader data = {this.props.data}/>
-            
-            <a-sky src= {'#'+this.props.image.name} /> 
-            
-            {/* Loads Hotspots */}
+            <a-sky id="sky" cursor="rayOrigin: mouse; fuse: false;" src= {'#'+this.props.image.name} /> 
             {this.links}
-            
-            {/* Loads Mouse */}
-            <a-camera id="cam1" rotation="0 0 0" rotation-reader cursor="rayOrigin: mouse; fuse: false;"></a-camera>
-           
-
+           <a-camera id="cam1" rotation="0 0 0" cursor="rayOrigin: mouse; fuse: false;"></a-camera> 
         </a-scene>
       </Segment>
     );

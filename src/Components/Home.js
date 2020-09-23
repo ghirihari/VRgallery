@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars,faExpandAlt,faInfo } from '@fortawesome/free-solid-svg-icons'
 
 import VRViewer from './VRComponents/VRViewer'
-import SecondaryView from './VRComponents/SecondaryView'; 
 import Slider from './Slider'
 import '../Styles/Home.css';
 
@@ -137,12 +136,14 @@ class Home extends React.Component {
                 {this.state.current_image.name}
             </div>
 
+            {/* INFO BAR */}
             <div id="info" className="info">
                 <img className="image" alt="info" src="https://cdn.glitch.com/a04a26d3-92af-4a88-9d49-8fcc2c5344a5%2Fclick.png?v=1570097488868"/>
                 <p>Click to Jump</p>
             </div>
 
 
+            {/* BOTTOM ICONS */}
             {!this.state.visible &&
             <div className="bottom-right" >
                 <div className="bottom-icons" onClick={this.info}>
@@ -160,3 +161,5 @@ class Home extends React.Component {
 }
 
 export default Home
+
+
