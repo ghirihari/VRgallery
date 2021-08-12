@@ -1960,6 +1960,11 @@ aframe-look-at-component@^1.0.0:
   resolved "https://registry.yarnpkg.com/aframe-look-at-component/-/aframe-look-at-component-1.0.0.tgz#dfd960d11ccdd4d80b153bcc4eae4041d66421ba"
   integrity sha512-urbsU4qaKg3drIShNDIrNQyuVh+yiFCbP50FMig7uDbVOlMZU3Tcj4oWbjxx3neD07Rn8atjpwBeqc6lceKGTw==
 
+aframe-mouse-cursor-component@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/aframe-mouse-cursor-component/-/aframe-mouse-cursor-component-0.5.3.tgz#dcff79def7f02c70e9b508fec8affa806c79f893"
+  integrity sha512-TfYY2aWMWai3M9ZPUUO3D5nQzjtlKfk/aMUqLEY0htfrUazBpR53keK923lM2RQJMVptrVUtO+pmNRJDQL9sPg==
+
 aframe@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/aframe/-/aframe-1.0.4.tgz#1b659533db0f5cf9b002c22804278da8349a32d2"
@@ -7889,9 +7894,9 @@ path-key@^3.1.0:
   integrity sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-to-regexp@0.1.7:
   version "0.1.7"
