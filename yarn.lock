@@ -1960,6 +1960,11 @@ aframe-look-at-component@^1.0.0:
   resolved "https://registry.yarnpkg.com/aframe-look-at-component/-/aframe-look-at-component-1.0.0.tgz#dfd960d11ccdd4d80b153bcc4eae4041d66421ba"
   integrity sha512-urbsU4qaKg3drIShNDIrNQyuVh+yiFCbP50FMig7uDbVOlMZU3Tcj4oWbjxx3neD07Rn8atjpwBeqc6lceKGTw==
 
+aframe-mouse-cursor-component@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/aframe-mouse-cursor-component/-/aframe-mouse-cursor-component-0.5.3.tgz#dcff79def7f02c70e9b508fec8affa806c79f893"
+  integrity sha512-TfYY2aWMWai3M9ZPUUO3D5nQzjtlKfk/aMUqLEY0htfrUazBpR53keK923lM2RQJMVptrVUtO+pmNRJDQL9sPg==
+
 aframe@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/aframe/-/aframe-1.0.4.tgz#1b659533db0f5cf9b002c22804278da8349a32d2"
@@ -3712,9 +3717,9 @@ decamelize@^1.2.0:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 decompress-response@^3.3.0:
   version "3.3.0"
